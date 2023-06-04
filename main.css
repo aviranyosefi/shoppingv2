@@ -1,0 +1,162 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #EEF0F4;
+    user-select: none;
+    direction: rtl;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    max-width: 320px;
+    margin: 30px auto;
+
+}
+input{
+    color: gray;
+    background-color: #DCE1EB;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+button{
+    color: white;
+    background-color: blue;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ul li {
+
+    background-color: #FFFDF8;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 15px;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 20px;
+}
+.li-green{
+    background-color: #009aa5;
+    color: white;
+}
+.li-white{
+    background-color: white;
+    color: black;
+}
+#categoryFilter{
+    color: gray;
+    background-color: #DCE1EB;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+.delete{
+    
+    color: white;
+    background-color: red;
+    border: 0;
+    padding-left: 50px;
+    padding: 0px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    display: none;
+  }
+.bread,
+.note:has(.bread) {
+  --tagColor: #0cee72;
+}
+.other,
+.note:has(.other) {
+  --tagColor: #fcdbcf;
+}
+.fruits,
+.note:has(.fruits) {
+  --tagColor: #ccdcff;
+}
+.milk,
+.note:has(.milk) {
+  --tagColor: #f9cafc;
+}
+.veg,
+.note:has(.veg) {
+  --tagColor: #5c6cca;
+}
+.meat,
+.note:has(.veg) {
+  --tagColor: #d65012;
+}
+.clean,
+.note:has(.clean) {
+  --tagColor: #5c6cca;
+}
+
+.bread,
+.other,
+.fruits,
+.milk,
+.veg,
+.meat,
+.clean {
+  background-color: var(--tagColor);
+}
+#bread-box:checked + label div,
+#other-box:checked + label div,
+#fruits-box:checked + label div,
+#milk-box:checked + label div,
+#veg-box:checked + label div,
+#meat-box:checked + label div,
+#clean-box:checked + label div  {
+  background-color: var(--tagColor);
+  color: unset;
+}
+#bread-box + label div,
+#other-box + label div,
+#fruits-box + label div,
+#milk-box + label div,
+#veg-box + label div,
+#meat-box + label div,
+#clean-box + label div {
+  background-color: white;
+  border: 1px solid var(--tagColor);
+  color: var(--tagColor);
+}
+.tag {
+    padding: 6px 12px;
+    width: fit-content;
+    border-radius: 9999px;
+    margin-top: 12px;
+    user-select: none;
+  }
+  .checkboxs{
+    display:flex;
+    flex-wrap: wrap;
+    
+  }
+  .hidden {
+    display: none;
+  }
+  .show {
+    display:block;
+  }
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="container">
+    <input type="text" id="searchInput" placeholder="חיפוש">
+	  <input type="text" id="input=field"  placeholder="כתוב">
+    
+    <button id="add-button">שמירה</button>
+    <div class="checkboxs">    
+      
+      <input type="checkbox" id="milk-box" class="checkbox-click" />
+      <label for="milk-box">
+        <div class="tag milk">מוצרי חלב</div>
+      </label>
+
+      <input type="checkbox" id="fruits-box" class="checkbox-click" />
+      <label for="fruits-box">
+        <div class="tag fruits">פירות</div>
+      </label>
+
+      <input type="checkbox" id="veg-box" class="checkbox-click" />
+      <label for="veg-box">
+        <div class="tag veg">ירקות</div>
+      </label>
+      
+      <input type="checkbox" id="bread-box" class="checkbox-click" />
+      <label for="bread-box">
+        <div class="tag bread">מאפים</div>
+      </label>
+
+      <input type="checkbox" id="meat-box" class="checkbox-click" />
+      <label for="meat-box">
+        <div class="tag meat">בשר</div>
+      </label>
+
+      <input type="checkbox" id="clean-box" class="checkbox-click" />
+      <label for="clean-box">
+        <div class="tag clean">ניקיון</div>
+      </label>
+  
+      <input type="checkbox" id="other-box" class="checkbox-click" />
+        <label for="other-box">
+        <div class="tag other">אחר</div>
+      </label>
+
+   
+    </div>
+
+     <ul id="shopping-list">
+      </ul>
+</div>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>

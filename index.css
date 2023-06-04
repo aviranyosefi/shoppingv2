@@ -1,0 +1,47 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #EEF0F4;
+    user-select: none;
+    direction: rtl;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    max-width: 320px;
+    margin: 30px auto;
+
+}
+input{
+    color: gray;
+    background-color: #DCE1EB;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+ #register , #login {    
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: white;
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: blue;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
